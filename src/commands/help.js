@@ -11,12 +11,14 @@ export default {
             .setTitle('🎧 Fidelio Help')
             .setDescription('Here are the available commands:')
             .addFields(
-                { name: '/play <query>', value: 'Plays a song from Spotify, YouTube, or SoundCloud.' },
+                { name: '/play <query>', value: 'Plays a song from Spotify, YouTube, or SoundCloud. Prefers explicit versions.' },
+                { name: '/search <query>', value: 'Search for tracks and choose which one to play.' },
                 { name: '/pause', value: 'Pauses the current song.' },
                 { name: '/resume', value: 'Resumes the paused song.' },
                 { name: '/skip', value: 'Skips to the next track.' },
                 { name: '/queue', value: 'Shows the current song queue.' },
                 { name: '/clear', value: 'Clears the entire queue.' },
+                { name: '/leave', value: 'Makes the bot leave the voice channel.' },
                 { name: '/loop', value: 'Toggles loop for the current track.' },
                 { name: '/shuffle', value: 'Shuffles the queue.' },
                 { name: '/volume <1-100>', value: 'Adjusts the playback volume.' },
